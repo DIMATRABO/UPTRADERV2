@@ -1,0 +1,51 @@
+ERROR:root:string indices must be integers
+ERROR:root:string indices must be integers
+ERROR:root:string indices must be integers
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:'data'
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:'data'
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:'data'
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:'data'
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:'data'
+ERROR:root:{'code': '400100', 'msg': 'Price increment invalid.'}
+ERROR:root:'data'
+ERROR:root:{'code': '400100', 'msg': 'Order size below the minimum requirement.'}
+ERROR:root:'data'
+ERROR:root:local variable 'response' referenced before assignment
+ERROR:root:local variable 'response' referenced before assignment
