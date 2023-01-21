@@ -11,13 +11,13 @@ BUY_ENDPOINT = "https://api.kucoin.com/api/v1/orders"
 STOP_LOSS_TAKE_PROFIT_ENDPOINT = "https://api.kucoin.com/api/v1/stop-order"
 
 # Replace with your Kucoin API key
-API_KEY = "63c7bec54891260001af322f"
+API_KEY = ""
 
 # Replace with your Kucoin API secret
-API_SECRET = "0b6f2cf5-153c-4b86-878f-9814ee7cde1d"
+API_SECRET = ""
 
 # Replace with your Kucoin API passphrase
-API_PASSPHRASE = "uptrader"
+API_PASSPHRASE = ""
 
 
 

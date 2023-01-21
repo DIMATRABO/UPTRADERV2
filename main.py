@@ -20,10 +20,6 @@ def initialize_min_prices(config_params):
     return config_params
 
 
-# Implement the stop function
-def stop_function_called():
-    return config_params["stop"] == "stop"
-
 # Log any errors
 def log_error(e):
     logging.error(e)
@@ -33,7 +29,7 @@ def log_error(e):
 
 initialize_min_prices(config_params)
 # Run the while loop
-while not stop:
+while True:
 
     try:
         # Start monitoring prices
@@ -42,8 +38,6 @@ while not stop:
     except Exception as e:
         # Log any errors that occur
         log_error(e)
-    # Check if the stop function has been called
-    if stop_function_called():
-        stop = True
+  
     time.sleep(config_params["time_step"])
     
