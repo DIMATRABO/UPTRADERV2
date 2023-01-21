@@ -90,6 +90,50 @@ def execute_buy_order(symbol , size ):
 
 
 
+def execute_sell_order(symbol , size ):
+    # Configure logging
+    logging.basicConfig(filename='logs/'+symbol+'.log', level=logging.INFO)
+    url = 'https://api.kucoin.com/api/v1/orders'
+    now = int(time.time() * 1000)
+            
+    data = {
+            "clientOid":"uniqueuuid" + get_random_string(8),
+            "side":"sell",
+            "symbol":symbol,
+            "type":"market",
+            "size": str(size)
+            }
+        
+
+    data_json = json.dumps(data)
+    str_to_sign = str(now) + 'POST' + '/api/v1/orders' + data_json
+    signature = base64.b64encode(hmac.new(API_SECRET.encode('utf-8'), str_to_sign.encode('utf-8'), hashlib.sha256).digest())
+    passphrase = base64.b64encode(hmac.new(API_SECRET.encode('utf-8'), API_PASSPHRASE.encode('utf-8'), hashlib.sha256).digest())
+    headers = {
+                    "KC-API-SIGN": signature,
+                    "KC-API-TIMESTAMP": str(now),
+                    "KC-API-KEY": API_KEY,
+                    "KC-API-PASSPHRASE": passphrase,
+                    "KC-API-KEY-VERSION": "2",
+                    "Content-Type": "application/json" # specifying content type or using json=data in request
+                    }
+
+    try:
+                response = requests.request('post', url, headers=headers, data=data_json)
+                code = float(response.json()["code"])
+                print(response.json())
+                if(code == 200000):
+                    logging.info(response.json()) 
+                else:
+                    logging.error(response.json()) 
+                
+    except requests.exceptions.RequestException as e: 
+                logging.error(response.json()) 
+    finally:
+        return response.json()
+
+
+
 def set_stop_loss_take_profit(symbol , stop_loss_price, take_profit_price , size):
     logging.basicConfig(filename='logs/'+symbol+'.log', level=logging.INFO)
     url = 'https://api.kucoin.com/api/v1/stop-order'

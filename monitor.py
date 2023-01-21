@@ -15,9 +15,8 @@ def start_monitoring(config_params):
 
     for part, price in prices.items():
 
-        #check if there is no stop order open 
-        if not stop_order_open(part , config_params):
-
+        #check if the part is already bought
+        if not is_bought(part , config_params):
             # Update the minimum price if the current price is lower
             if price < config_params["min_price"][part]:
                 config_params["min_price"][part] = price
@@ -29,17 +28,26 @@ def start_monitoring(config_params):
                     buyOrder = execute_buy_order(part, price , config_params)
                     if(buyOrder[0] == 200000):
                         print("\t" + "successfully bought")
-                        # Set the stop loss and take profit
-                        size = buyOrder[1]
-                        precision = buyOrder[2]
-                        stOrder = set_stop_loss_take_profit(part, price , config_params , size , precision)
-                        if( stOrder[0] == 200000):
-                            print("\t" + "sp and tp successfully set on")
-                            config_params["stop_order_id"][part] = stOrder[1]
-                            config_params["min_price"][part] = 99999999999
+                        # Set the is_bought to True  and m
+                        config_params["is_bought"][part] = True
+                        config_params["min_price"][part] = 99999999999
 
 
-
+        else: 
+            # Update the max price if the current price is higher
+            if price > config_params["max_price"][part]:
+                config_params["max_price"][part] = price
+            # Check if the price has decreased by the specified percentage
+            if price < config_params["max_price"][part] * (1 - config_params["percent_decrease"]/100):
+                    print("\t" + part + " price")
+                    print("\t" +  str(price) + "<" + str(config_params["min_price"][part]) + "* (1 - "+str(config_params["percent_decrease"])+"%)" )
+                    # Execute the buy order
+                    sellOrder = execute_sell_order(part)
+                    if(buyOrder[0] == 200000):
+                        print("\t" + "successfully bought")
+                        # Set is_bought to false and m
+                        config_params["is_bought"][part] = False
+                        config_params["min_price"][part] = 0
         
 
 def check_funds(part , funds_percentage, price  , currency):
@@ -65,6 +73,20 @@ def execute_buy_order(part, price , config_params):
     print("\t buying "+ str(size) + " " + str(part))
     response =kucoin_api.execute_buy_order(part, size)
     return float(response["code"]) , size , precision
+
+
+def execute_sell_order(part):
+    base_currency = part.split("-")[0]
+    available_funds = kucoin_api.get_available_funds(base_currency)
+    precision = int(kucoin_api.get_precision(part))
+    size = round((available_funds),precision)
+    print("\t precision= "+str(precision))
+    print("\t size= " + str(size))
+    print("\t buying "+ str(size) + " " + str(part))
+    response =kucoin_api.execute_sell_order(part, size)
+    return float(response["code"]) , size , precision
+
+
 
 def set_stop_loss_take_profit(part, price ,config_params , size , precision):
     # Set the stop loss and take profit using the Kucoin API
@@ -93,3 +115,7 @@ def stop_order_open(part, config_params):
         return False
     except:
         return False
+    
+
+def is_bought(part , config_params):
+    return config_params["is_bought"][part]
