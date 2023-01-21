@@ -1,0 +1,181 @@
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '400760', 'msg': 'The order funds should be more than 0.1 USDT.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:local variable 'buyOrder' referenced before assignment
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
