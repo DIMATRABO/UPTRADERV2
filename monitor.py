@@ -45,11 +45,13 @@ def start_monitoring(config_params):
                     print("\t" +  str(price) + ">" + str(config_params["max_price"][part]) + "* (1 - "+str(config_params["percent_decrease"])+"%)" )
                     # Execute the buy order
                     sellOrder = execute_sell_order(part)
-                    if(sellOrder[0] == 200000):
+                    if(sellOrder[0] == 200000 or sellOrder[0] == 300000):
                         print("\t" + "successfully selled")
                         # Set is_bought to false and m
                         config_params["is_bought"][part] = False
                         config_params["max_price"][part] = 0
+
+                    
         
 
 def check_funds(part , funds_percentage, price  , currency):
@@ -74,9 +76,11 @@ def execute_buy_order(part, price , config_params):
     size = size *( 1 - 0.01) # add a margin of error
     size = round(size,precision)
 
+    print("\t available_funds= "+str(available_funds))
     print("\t precision= "+str(precision))
     print("\t size= " + str(size))
     print("\t buying "+ str(size) + " " + str(part))
+
     response =kucoin_api.execute_buy_order(part, size)
     return float(response["code"]) , size , precision
 
@@ -89,9 +93,12 @@ def execute_sell_order(part):
     size = available_funds - math.pow(10, -precision)
     size = round(size,precision)
 
+    print("\t base_currency= "+ str(base_currency))
+    print("\t available_funds= "+str(available_funds))
     print("\t precision= "+str(precision))
     print("\t size= " + str(size))
     print("\t selling  "+ str(size) + " " + str(part))
+
     response =kucoin_api.execute_sell_order(part, size)
     return float(response["code"]) , size , precision
 

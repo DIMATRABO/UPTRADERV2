@@ -179,3 +179,4 @@ ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
 ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
 ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
 ERROR:root:{'code': '200004', 'msg': 'Balance insufficient!'}
+ERROR:root:{'code': '300000', 'msg': 'Order size invalid.'}
