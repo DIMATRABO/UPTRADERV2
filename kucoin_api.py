@@ -14,10 +14,11 @@ STOP_LOSS_TAKE_PROFIT_ENDPOINT = "https://api.kucoin.com/api/v1/stop-order"
 API_KEY = ""
 
 # Replace with your Kucoin API secret
-API_SECRET = ""
+API_SECRET = "0bd"
 
 # Replace with your Kucoin API passphrase
 API_PASSPHRASE = ""
+
 
 
 
@@ -45,8 +46,10 @@ def get_prices(parts):
 
 
 def execute_buy_order(symbol , size ):
+
     # Configure logging
-    logging.basicConfig(filename='logs/'+symbol+'.log', level=logging.INFO)
+    logging.basicConfig(filename='logs/'+symbol+'.log', filemode='w', format='%(asctime)s - %(message)s', level=logging.INFO)
+
 
 
     url = 'https://api.kucoin.com/api/v1/orders'
@@ -79,9 +82,9 @@ def execute_buy_order(symbol , size ):
                 code = float(response.json()["code"])
                 print(response.json())
                 if(code == 200000):
-                    logging.info(response.json()) 
+                    logging.info("buying "+str(size)+symbol+" succesfully") 
                 else:
-                    logging.error(response.json()) 
+                    logging.info("buying "+str(size)+symbol+" failed " + response.json()) 
                 
     except requests.exceptions.RequestException as e: 
                 logging.error(response.json()) 
@@ -92,7 +95,10 @@ def execute_buy_order(symbol , size ):
 
 def execute_sell_order(symbol , size ):
     # Configure logging
-    logging.basicConfig(filename='logs/'+symbol+'.log', level=logging.INFO)
+    logging.basicConfig(filename='logs/'+symbol+'.log', filemode='w', format='%(asctime)s - %(message)s', level=logging.INFO)
+
+
+
     url = 'https://api.kucoin.com/api/v1/orders'
     now = int(time.time() * 1000)
             
@@ -123,12 +129,12 @@ def execute_sell_order(symbol , size ):
                 code = float(response.json()["code"])
                 print(response.json())
                 if(code == 200000):
-                    logging.info(response.json()) 
+                    logging.info("selling "+str(size)+symbol+" succesfully") 
                 else:
-                    logging.error(response.json()) 
+                    logging.info("selling "+str(size)+symbol+" failed " + response.json()) 
                 
     except requests.exceptions.RequestException as e: 
-                logging.error(response.json()) 
+                logging.info(response.json()) 
     finally:
         return response.json()
 
@@ -171,10 +177,10 @@ def set_stop_loss_take_profit(symbol , stop_loss_price, take_profit_price , size
                 if(code == 200000):
                     logging.info(response.json()) 
                 else:
-                    logging.error(response.json()) 
+                    logging.info(response.json()) 
                 
     except requests.exceptions.RequestException as e: 
-                logging.error(response.json()) 
+                logging.info(response.json()) 
     finally:
         return response.json()
 

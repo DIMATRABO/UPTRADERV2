@@ -1,8 +1,6 @@
-import config, monitor, logging, time
+import config, monitor, time
 
 
-# Configure logging
-logging.basicConfig(filename='bot_errors.log', level=logging.ERROR)
 
 # Initialize variables
 config_params = config.load_config()
@@ -20,9 +18,7 @@ def initialize_min_prices(config_params):
     return config_params
 
 
-# Log any errors
-def log_error(e):
-    logging.error(e)
+
 
 
 
@@ -37,7 +33,7 @@ while True:
         
     except Exception as e:
         # Log any errors that occur
-        log_error(e)
+        print(e)
   
     time.sleep(config_params["time_step"])
     
