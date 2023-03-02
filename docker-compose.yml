@@ -3,5 +3,15 @@ services:
   uptrader:
     image: uptrader:latest
     command: python3 main.py
+    
+  db:
+      image: postgres:14.1-alpine
+      restart: always
+      environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DB=trabo
+      ports:
+        - '5432:5432'
 
- 
+  

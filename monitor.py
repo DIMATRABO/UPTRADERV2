@@ -1,4 +1,4 @@
-import kucoin_api,logging 
+import gate_way.kucoin_api as kucoin_api
 import math
 
 size=0
