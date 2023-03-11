@@ -37,9 +37,9 @@ def execute_buy_order(part: Part, price):
 
 
 def execute_sell_order(part: Part):
-    base_currency = part.split("-")[0]
+    base_currency = part.symbol.split("-")[0]
     available_funds = kucoin_api.get_available_funds(base_currency)
-    precision = int(kucoin_api.get_precision(part))
+    precision = int(kucoin_api.get_precision(part.symbol))
 
     size = available_funds - math.pow(10, -precision)
     size = round(size,precision)
@@ -51,6 +51,7 @@ def execute_sell_order(part: Part):
     print("\t selling  "+ str(size) + " " + str(part.symbol))
 
     response =kucoin_api.execute_sell_order(part.symbol, size)
+    print(str(response))
     return float(response["code"]) , size , precision
 
 
@@ -91,10 +92,11 @@ def monitor(part: Part , price ):
                 part.max_price = price
             # Check if the price has decreased by the specified percentage
             if price < part.max_price * (1 - part.decrease/100):
-                    print("\t" + part + " price")
+                 
                     print("\t" +  str(price) + ">" + str(part.max_price) + "* (1 - "+str(part.decrease)+"%)" )
                     # Execute the buy order
                     sellOrder = execute_sell_order(part)
+
                     if(sellOrder[0] == 200000 ):
                         print("\t" + "successfully selled")
                         # Set is_bought to false and m
